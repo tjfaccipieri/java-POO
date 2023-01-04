@@ -2,8 +2,6 @@ package contaBancaria;
 
 // nome do nosso objeto
 public class ContaBancaria {
-
-
     //	atributos/caracteristicas do nosso objeto
     private int numero;
     private int agencia;
@@ -79,5 +77,10 @@ public class ContaBancaria {
         this.setSaldo(this.getSaldo() - valorSacado);
         System.out.println("Valor de R$" + valorSacado +  " sacado com sucesso \nAgora o seu saldo é de: " + this.getSaldo());
         return true;
+    }
+
+    public void depositar(float valor){
+        System.out.println("Deposito de " + valor + " feito com sucesso, seu saldo atual é de: " + (getSaldo() + valor));
+        this.setSaldo(this.getSaldo() + valor);
     }
 }
