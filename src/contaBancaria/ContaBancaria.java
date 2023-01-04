@@ -13,7 +13,7 @@ public class ContaBancaria {
 
 
     //	Criação do construtor do nosso objeto, para poder acessar a nossa classe por fora desse arquivo
-    //	Cada um dos atributos ddescritos aqui, irão repassar os seus dados para a classe principal ContaBancaria
+    //	Cada um dos atributos descritos aqui, irão repassar os seus dados para a classe principal ContaBancaria
     // Método construtor
     public ContaBancaria(int numero, int agencia, int tipo, String titular, float saldo) {
         this.numero = numero;
@@ -31,13 +31,8 @@ public class ContaBancaria {
 
     //Métodos acessores da classe
 
-
     public int getNumero() {
         return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
     }
 
     public int getAgencia() {
@@ -71,6 +66,7 @@ public class ContaBancaria {
     public void setSaldo(float saldo) {
         this.saldo = saldo;
     }
+
 
     // métodos especificos da conta bancária
 
