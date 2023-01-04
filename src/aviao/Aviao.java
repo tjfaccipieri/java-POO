@@ -4,6 +4,7 @@ package aviao;
 //objeto e apresente as informações deste objeto no console.
 public class Aviao {
 
+//    criação dos atributos de um avião
     private int motores;
 //    false = motor helice
 //    true = motor jato
@@ -17,8 +18,11 @@ public class Aviao {
     private int saidaEmergencia;
     private boolean temLanchinho;
 
+//    geração de um construtor preenchido, com validação de tipo de transporte
+//    caso seja um avião de carga, automaticamente não tem divisão por classes e não tem lanche servido no voo
     public Aviao(int motores, boolean tipoMotor, String tipoTransporte, String fabricante, String companhia, String cor, int capacidade, int classes, int saidaEmergencia, boolean temLanchinho) {
 
+//        esse if garante que independente do que for passado no instanciamento, se for um avião de carga, não tem classes nem lanches
         if(tipoTransporte == "carga") {
             classes = 0;
             temLanchinho = false;
@@ -36,8 +40,11 @@ public class Aviao {
         this.temLanchinho = temLanchinho;
     }
 
+//    construtor vazio
     public Aviao() {}
 
+
+//    geração automatica dos getters e setters
     public int getMotores() {
         return motores;
     }
