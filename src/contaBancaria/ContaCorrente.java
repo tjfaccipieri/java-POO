@@ -14,11 +14,11 @@ public class ContaCorrente extends ContaBancaria{
         return limite;
     }
 
-    public void setLimite(float limite) {
+    private void setLimite(float limite) {
         this.limite = limite;
     }
 
-    @Override
+
     public boolean sacar(float valorSacado) {
         if (this.getSaldo() + this.getLimite() < valorSacado) {
             System.out.println("Dá não, sem limite pra isso parceiro");
