@@ -1,5 +1,8 @@
 package revisaoJava;
 
+// Desafio:
+// Criar uma lista para os cursos livres, e uma lista para os cursos de especialização
+// Criar um menu para consulta das listas (o menu fica a critério de cada pessoa, o que constar nas opções
 public class TesteCursos {
     public static void main(String[] args) {
         CursosLivres curso1 = new CursosLivres(1,
