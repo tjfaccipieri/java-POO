@@ -7,6 +7,7 @@ public abstract class Cursos {
     private int vagas;
     private double valor;
     private String periodo;
+
     private boolean matricula;
 
     public Cursos(int codigoCurso, String nome, int vagas, double valor, String periodo, boolean matricula) {
@@ -73,7 +74,12 @@ public abstract class Cursos {
                 " \nNome do curso: " + getNome() +
                 " \nQuantidade de vagas: " + getVagas() +
                 " \nPeriodo do curso: " + getPeriodo() +
-                " \nValor: " + getValor() +
-                " \nEstá aceitando matriculas?: " + isMatricula());
+                " \nValor: " + getValor());
+        if(isMatricula()) {
+            System.out.println("Está com matriculas abertas");
+        } else {
+            System.out.println("Matriculas temporariamente fechadas");
+        }
+
     }
 }
